@@ -8,3 +8,15 @@
  ::-moz-placeholder {  /* Firefox 19+ */
        font-size: 12px!important;
  }
+
+ .swal-text {
+      font-size: 12px;
+ }
+
+ .swal-title {
+      font-size: 20px;
+ }
+
+ #question-td, #question-th {
+      padding: 40px;
+ }

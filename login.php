@@ -1,3 +1,18 @@
+<?php
+  session_start();
+  if(isset($_SESSION['id'])){
+
+    if($_SESSION['loa'] == 1){
+        header('location: dashboard.php');
+    }
+
+    else{
+        header('location: student-dashboard.php');
+    }
+    
+  }
+?>
+
 <?php include 'templates/_resources.html'; ?>
 <link rel="stylesheet" href="assets/css/sign-in.css">
 <title> Sign In </title>
@@ -7,7 +22,7 @@
 </head>
 
 <body class="text-center">
-    <?php include 'templates/_navbar.html'; ?>
+    <?php include 'templates/_navbar.php'; ?>
 
     <!-- Section: Design Block -->
     <section class="">
@@ -70,8 +85,8 @@
                                     </div>
 
                                     <div class="text-end">
-                                        <p class="m-0">Don't have an account?:</p>
-                                        <a href="sign-up.php" class="text-success fw-semibold text-decoration-none"> SIGN UP NOW </a>
+                                        <p class="m-0">Don't have an account?</p>
+                                        <a href="sign-up.php" class="text-primary fw-semibold text-decoration-none"> SIGN UP NOW </a>
                                     </div>
                                 </form>
                             </div>

@@ -24,16 +24,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Dashboard</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Criselle Valdez
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-id-card-clip"></i> Profile </a></li>
-                                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a></li>
-                            </ul>
-                        </li>
+                        <?php if (isset($_SESSION['name'])) { ?>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo $_SESSION['name']; ?>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-id-card-clip"></i> Profile </a></li>
+                                    <li><a id="sign-out" class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a></li>
+                                </ul>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
