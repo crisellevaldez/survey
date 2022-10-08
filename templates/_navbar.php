@@ -22,7 +22,11 @@
                             <a class="nav-link text-white" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Dashboard</a>
+                            <?php if (isset($_SESSION['loa']) == 2) { ?>
+                                <a class="nav-link text-white" href="student-dashboard.php">Dashboard</a>
+                            <?php } else {?>
+                                <a class="nav-link text-white" href="dashboard.php">Dashboard</a>
+                            <?php } ?>
                         </li>
                         <?php if (isset($_SESSION['name'])) { ?>
         

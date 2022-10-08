@@ -32,6 +32,7 @@
                             <div class="row g-0">
                                 <div class="col-xl-6">
                                     <div class="card-body p-md-5 text-black">
+                                        <h3> Sign Up </h3>
                                         <div class="row">
                                             <h5 class="mb-3"> Personal Information </h5>
                                             <div class="col-md-4 mb-2 p-1">
@@ -62,7 +63,7 @@
 
                                             <div class="col-md-6 mb-2 p-1">
                                                 <div class="form-outline">
-                                                    <input type="tel" placeholder="CONTACT NO." name="contact-no" class="form-control pt-2 pb-2" required/>
+                                                    <input type="tel" placeholder="CONTACT NO." name="contact-no" maxlength ="11" pattern="09[0-9]{9}" class="form-control pt-2 pb-2" required/>
                                                     <div class="invalid-feedback text-start"> Please enter a valid contact no.</div>
                                                 </div>
                                             </div>
@@ -108,7 +109,7 @@
                                                     <option value="1">1st Year</option>
                                                     <option value="2">2nd Year</option>
                                                     <option value="3">3rd Year</option>
-                                                    <option value="3">4th Year</option>
+                                                    <option value="4">4th Year</option>
                                                 </select>
                                             </div>
                                         </div>

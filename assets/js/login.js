@@ -14,7 +14,7 @@ $(function() {
                 },
                 success: function(res){
                     if (res == 1){
-                        location.href = 'dashboard.php';
+                        location.href = 'student-dashboard.php';
                     }
 
                     else {

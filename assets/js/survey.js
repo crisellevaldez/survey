@@ -43,33 +43,34 @@ $(function () {
                     <div class="text-center mb-3">
                         <div class="form-check form-check-inline">
                             <p> Strongly Disagree </p>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" />
+                            <input class="form-check-input" type="radio" name="question-${question.id}" value="1" required/>
                             <label class="form-check-label" for="inlineRadio1">1</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <p> Disagree </p>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" />
+                            <input class="form-check-input" type="radio" name="question-${question.id}" value="2" />
                             <label class="form-check-label" for="inlineRadio2">2</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <p> Neutral </p>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" />
+                            <input class="form-check-input" type="radio" name="question-${question.id}" value="3" />
                             <label class="form-check-label" for="inlineRadio3">3</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <p> Agree </p>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4" />
+                            <input class="form-check-input" type="radio" name="question-${question.id}" value="4" />
                             <label class="form-check-label" for="inlineRadio4">4</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                             <p> Strongly Agree </p>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5" />
+                            <input class="form-check-input" type="radio" name="question-${question.id}" value="5" />
                             <label class="form-check-label" for="inlineRadio5">5</label>
                         </div>
+                        <div class="invalid-feedback text-start"> Please enter your answer.</div>
                     </div>
                 </div> </td> </tr>`;
             }
@@ -85,7 +86,7 @@ $(function () {
 
             let data = new FormData(this);
             $.ajax({
-                url: "assets/php/sign-up.php",
+                url: "assets/php/survey.php",
                 data: data,
                 method: 'POST',
                 contentType: false,
@@ -95,20 +96,11 @@ $(function () {
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
-                            title: "Sign Up Success",
                             showConfirmButton: false,
                             timer: 1500
                         })
 
-                        setTimeout(function () { location.href = 'login.php' }, 1500);
-                    }
-
-                    else {
-                        Swal.fire(
-                            'Error',
-                            'Email is already existing. \nPlease choose another email.',
-                            'error'
-                        )
+                        setTimeout(function(){location.href = 'student-dashboard.php'}, 1500);
                     }
                 }
             });

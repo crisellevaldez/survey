@@ -72,18 +72,6 @@
                                         Sign In
                                     </button>
 
-                                    <!-- Register buttons -->
-                                    <div class="text-center">
-                                        <p>or sign-in with:</p>
-                                        <button type="button" class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </button>
-
-                                        <button type="button" class="btn btn-link btn-floating mx-1">
-                                            <i class="fab fa-google"></i>
-                                        </button>
-                                    </div>
-
                                     <div class="text-end">
                                         <p class="m-0">Don't have an account?</p>
                                         <a href="sign-up.php" class="text-primary fw-semibold text-decoration-none"> SIGN UP NOW </a>
