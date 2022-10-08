@@ -3,19 +3,16 @@ session_start();
 include 'assets/php/connection.php';
 if (!isset($_SESSION['id'])) {
     header('location: login.php');
-}
-
-else { 
+} else {
     $stmt = $conn->prepare("SELECT * FROM answers WHERE user_id=?");
 
     $stmt->bind_param("i", $_SESSION['id']);
     $stmt->execute();
     $stmt->store_result();
 
-    if($stmt->num_rows() > 0){
+    if ($stmt->num_rows() > 0) {
         header('location: result.php');
     }
-
 }
 
 ?>
@@ -108,7 +105,9 @@ else {
 
                     </div>
                     <div class="card-footer text-end">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <?php if ($_SESSION['loa'] == 2) { ?>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        <?php } ?>
                     </div>
                 </form>
             </div>
@@ -118,7 +117,7 @@ else {
     </div>
 
 
-
+    <?php include 'templates/_footer.html'; ?>
 </body>
 
 </html>

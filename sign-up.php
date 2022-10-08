@@ -128,7 +128,7 @@
             </div>
         </div>
     </section>
-
+    <?php include 'templates/_footer.html'; ?>
 </body>
 
 </html>

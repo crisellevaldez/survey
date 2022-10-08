@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
 
     $.ajax({
         url: "assets/php/results.php",

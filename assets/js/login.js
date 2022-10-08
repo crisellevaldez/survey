@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
     $('.needs-validation').on('submit', function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -14,7 +14,7 @@ $(function() {
                 },
                 success: function(res){
                     if (res == 1){
-                        location.href = 'student-dashboard.php';
+                        location.href = 'dashboard.php';
                     }
 
                     else {

@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
     $('.needs-validation').on('submit', function(e) {
         e.preventDefault();
         e.stopPropagation();

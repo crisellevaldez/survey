@@ -24,8 +24,7 @@ else {
 <link rel="stylesheet" href="assets/css/circle.css">
 <title> Results </title>
 
-<!-- Results JS
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+<!-- Results JS -->
 <script src="assets/js/results.js"></script>
 
 <!-- Back To Top JS -->
@@ -41,7 +40,7 @@ else {
         </div>
         <?php include 'templates/_back-to-top.html'; ?>
     </div>
-
+    <?php include 'templates/_footer.html'; ?>
 </body>
 
 </html>

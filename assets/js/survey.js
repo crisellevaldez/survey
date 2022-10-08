@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function(){
 
     Swal.fire({
         title: 'DISCLAIMER',
@@ -100,7 +100,7 @@ $(function () {
                             timer: 1500
                         })
 
-                        setTimeout(function(){location.href = 'student-dashboard.php'}, 1500);
+                        setTimeout(function(){location.href = 'result.php'}, 1500);
                     }
                 }
             });

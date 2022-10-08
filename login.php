@@ -5,7 +5,7 @@
     if($_SESSION['loa'] == 1){
         header('location: dashboard.php');
     }
-
+    
     else{
         header('location: student-dashboard.php');
     }
@@ -51,7 +51,7 @@
                                     <div class="row">
                                         <div class="col-md-12 mb-3">
                                             <h3> Sign In </h3>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque illum officiis. </p>
+                                            <p> Login to answer our survey. </p>
                                         </div>
                                     </div>
 
@@ -86,7 +86,7 @@
         <!-- Jumbotron -->
     </section>
     <!-- Section: Design Block -->
-
+    <?php include 'templates/_footer.html'; ?>
 </body>
 
 </html>

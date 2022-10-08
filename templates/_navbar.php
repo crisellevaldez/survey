@@ -16,17 +16,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="login.php">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About Us</a>
+                            <a class="nav-link text-white" href="about-us.php">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <?php if (isset($_SESSION['loa']) == 2) { ?>
+                            <?php if (isset($_SESSION['loa'])){ 
+                                if ($_SESSION['loa']  == 2) { ?>
                                 <a class="nav-link text-white" href="student-dashboard.php">Dashboard</a>
                             <?php } else {?>
                                 <a class="nav-link text-white" href="dashboard.php">Dashboard</a>
-                            <?php } ?>
+                            <?php } }?>
                         </li>
                         <?php if (isset($_SESSION['name'])) { ?>
         
@@ -36,7 +37,7 @@
                                     <?php echo $_SESSION['name']; ?>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-id-card-clip"></i> Profile </a></li>
+                                    <!-- <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-id-card-clip"></i> Profile </a></li> -->
                                     <li><a id="sign-out" class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a></li>
                                 </ul>
                             </li>
