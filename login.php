@@ -32,19 +32,16 @@
                 <div class="row gx-lg-5 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h1 class="my-5 display-3 fw-bold ls-tight">
-                            Lorem Ipsum <br />
-                            <span class="text-primary">dolor sit amet</span>
+                            Welcome <br />
+                            <span style="color: #d8363a">to our <span style="color: #ee7724">website </span></span>
                         </h1>
                         <p style="color: hsl(217, 10%, 50.8%)">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-                            quibusdam tempora at cupiditate quis eum maiores libero
-                            veritatis? Dicta facilis sint aliquid ipsum atque?
+                           The website consist of survey questions regarding mental health. Please sign in or sign up to access our services. Join us now! Thank you!
                         </p>
                     </div>
 
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div class="card">
+                        <div class="card shadow ">
                             <div class="card-body py-5 px-md-5">
                                 <form class="needs-validation" novalidate>
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -68,13 +65,13 @@
                                     </div>
 
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-primary btn-block mb-4 w-100 p-2">
+                                    <button type="submit" class="btn gradient-custom btn-block mb-4 w-100 p-2 text-light">
                                         Sign In
                                     </button>
 
                                     <div class="text-end">
                                         <p class="m-0">Don't have an account?</p>
-                                        <a href="sign-up.php" class="text-primary fw-semibold text-decoration-none"> SIGN UP NOW </a>
+                                        <a href="sign-up.php" class="btn btn-outline-danger fw-semibold text-decoration-none"> SIGN UP NOW </a>
                                     </div>
                                 </form>
                             </div>

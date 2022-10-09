@@ -30,7 +30,7 @@ if (!isset($_SESSION['id'])) {
 <body class="text-center">
     <?php include 'templates/_navbar.php'; ?>
 
-    <div class="container">
+    <div class="container shadow-lg p-3">
         <div class="mx-0 mx-sm-auto">
             <div class="card mt-5">
                 <form class="needs-validation" novalidate>
@@ -85,7 +85,7 @@ if (!isset($_SESSION['id'])) {
                         <!-- Insert Questions  -->
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-12>">
+                                <div class="col-md-12">
                                     <table class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
@@ -106,7 +106,7 @@ if (!isset($_SESSION['id'])) {
                     </div>
                     <div class="card-footer text-end">
                         <?php if ($_SESSION['loa'] == 2) { ?>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn gradient-custom text-white">Submit</button>
                         <?php } ?>
                     </div>
                 </form>

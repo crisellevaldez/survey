@@ -71,10 +71,10 @@ if (isset($_SESSION['id'])) {
             </div>
         </div>
 
-        <div class="row mt-5" id="chart">
+        <div class="row mt-5 shadow-lg pt-5" id="chart">
             <h3> Survey Results </h3>
             <p class="mb-5"> Below are the results of the survey per question. These data are from the users who answered the survey. 
-            <button id="export" class="btn btn-success w-25 d-block float-end"> Export </button> </p>
+            <button id="export" class="btn gradient-custom text-white w-25 d-block float-end"> Export </button> </p>
         </div>
        
         <?php include 'templates/_footer.html'; ?>

@@ -27,7 +27,7 @@
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col">
-                    <div class="card card-registration my-4">
+                    <div class="card card-registration shadow my-4">
                         <form class="needs-validation" novalidate>
                             <div class="row g-0">
                                 <div class="col-xl-6">
@@ -115,7 +115,7 @@
                                         </div>
 
                                         <div class="col-md-12 mb-2 p-1">
-                                            <button type="submit" class="btn btn-primary btn-block mb-4 w-100 p-2">
+                                            <button type="submit" class="btn gradient-custom text-white btn-block mb-4 w-100 p-2">
                                                 Sign Up
                                             </button>
                                         </div>

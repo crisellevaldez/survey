@@ -28,6 +28,7 @@ $(document).ready(function () {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/dist/bootstrap-v5.2.2/css/bootstrap.min.css">
 
         <!-- JQuery -->
@@ -35,7 +36,7 @@ $(document).ready(function () {
         <script src="assets/dist/jquery/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
         </head>
         <body> <div class="container">
-        <button id="export" onclick="exportTableToExcel('tblData', 'report')" class="btn btn-success w-25 d-block float-end"> Export XLS </button> </p>
+        <button id="export" onclick="exportTableToExcel('tblData', 'report')" class="btn gradient-custom text-white w-25 d-block float-end"> Export XLS </button> </p>
             <table class="table" id="tblData">
                 <thead>
                     <tr>
