@@ -52,7 +52,7 @@ if (!isset($_SESSION['id'])) {
                                 <div class="col-md-6 mb-2 p-1">
                                     <div class="form-outline">
                                         <h6 class="text-start"> Age </h6>
-                                        <input type="tel" placeholder="CONTACT NO." name="contact-no" value="<?php echo $_SESSION["age"]; ?>" class="form-control pt-2 pb-2" />
+                                        <input type="tel" placeholder="CONTACT NO." name="contact-no" value="<?php echo $_SESSION["age"]; ?>" class="form-control pt-2 pb-2" readonly/>
                                     </div>
                                 </div>
 

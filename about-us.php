@@ -10,9 +10,9 @@ session_start();
   <?php include 'templates/_navbar.php'; ?>
   <div class="container ">
     <div class="px-4 py-5 my-5 text-center">
-      <h1 class="display-5 fw-bold">About Us</h1>
+      <h1 class="display-5 fw-bold" style="text-shadow: 3px 1px #ffffff;">About Us</h1>
       <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4">Our goal as a team is to gather
+        <p class="lead mb-4 fw-semibold"> Our goal as a team is to gather
           knowledge about the usage of
           social media and its relation to
           the psychological state of Bulacan
@@ -40,15 +40,15 @@ session_start();
         <img src="assets/imgs/3.png" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Contact Information</h1>
-        <p class="lead">We are a 4th year BSIT
+        <h1 class="display-5 fw-bold lh-1 mb-3" style="text-shadow: 3px 1px #ffffff;">Contact Information</h1>
+        <p class="lead fw-semibold">We are a 4th year BSIT
           student in Bulacan State
           University. You can
-          contact us at: </br> <a href="mailto:hairanicole.fruto.s@bulsu.edu.ph">hairanicole.fruto.s@bulsu.edu.ph</a>, 
-          <a href="mailto:michaelluis.sarmiento.o@bulsu.edu.ph"> michaelluis.sarmiento.o@bulsu.edu.ph </a>,
-          <a href="mailto:mariellerika.go.a@bulsu.edu.ph">mariellerika.go.a@bulsu.edu.ph </a>,
-          <a href="mailto:kathlene.trabajales.dc@bulsu.edu.ph">kathlene.trabajales.dc@bulsu.edu.ph </a>, 
-          <a href="mailto:lionel.roque.p@bulsu.edu.ph">lionel.roque.p@bulsu.edu.ph. </a></p>
+          contact us at: </br> <a href="mailto:hairanicole.fruto.s@bulsu.edu.ph">  hairanicole.fruto.s@bulsu.edu.ph </a>, </br>
+          <a href="mailto:michaelluis.sarmiento.o@bulsu.edu.ph">  michaelluis.sarmiento.o@bulsu.edu.ph </a>,</br>
+          <a href="mailto:mariellerika.go.a@bulsu.edu.ph"> mariellerika.go.a@bulsu.edu.ph </a>, </br>
+          <a href="mailto:kathlene.trabajales.dc@bulsu.edu.ph">kathlene.trabajales.dc@bulsu.edu.ph </b></a>,</br> 
+          <a href="mailto:lionel.roque.p@bulsu.edu.ph">lionel.roque.p@bulsu.edu.ph.</a></p>
       </div>
     </div>
   </div>

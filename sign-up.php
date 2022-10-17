@@ -20,10 +20,10 @@
 <script src="assets/js/sign-up.js"></script>
 </head>
 
-<body class="text-center bg-light">
+<body class="text-center">
     <?php include 'templates/_navbar.php'; ?>
 
-    <section class="h-100 bg-light">
+    <section class="h-100">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col">
@@ -83,7 +83,7 @@
                                             <div class="col-md-12 mb-2 p-1">
                                                 <div class="form-outline">
                                                     <input type="password" placeholder="PASSWORD" name="password" class="form-control pt-2 pb-2" required />
-                                                    <div class="invalid-feedback text-start"> Please enter a valid email address.</div>
+                                                    <div class="invalid-feedback text-start"> Please enter a pasword.</div>
                                                 </div>
                                             </div>
                                         </div>

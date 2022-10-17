@@ -1,43 +1,51 @@
 ::-webkit-input-placeholder {
-    font-size: 12px!important;
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-       font-size: 12px!important;
- }
- ::-moz-placeholder {  /* Firefox 19+ */
-       font-size: 12px!important;
- }
+     font-size: 12px !important;
+}
 
- .swal-text {
-      font-size: 12px;
- }
+:-moz-placeholder {
+     /* Firefox 18- */
+     font-size: 12px !important;
+}
 
- .swal-title {
-      font-size: 20px;
- }
+::-moz-placeholder {
+     /* Firefox 19+ */
+     font-size: 12px !important;
+}
 
- #question-td, #question-th {
-      padding: 40px;
- }
+.swal-text {
+     font-size: 12px;
+}
 
- /* Shadow */
- .b-example-divider {
+.swal-title {
+     font-size: 20px;
+}
+
+#question-td,
+#question-th {
+     padding: 40px;
+}
+
+/* Shadow */
+.b-example-divider {
      height: 3rem;
      background-color: rgba(0, 0, 0, .1);
      border: solid rgba(0, 0, 0, .15);
      border-width: 1px 0;
      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-   }
+}
 
-   .gradient-custom {
+.gradient-custom {
      /* fallback for old browsers */
      background: #fccb90;
-     
+
      /* Chrome 10-25, Safari 5.1-6 */
      background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-     
+
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-     }
-     
+}
+
+body {
+     background-image: url("../imgs/bg.png");
+     background-size: cover;
+}

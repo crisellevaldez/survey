@@ -12,16 +12,16 @@ session_start();
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class=" py-5">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Welcome</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">Join Us to view our survey and use our services. Thank you!</p>
+                                <h1 class="display-5 fw-bolder mb-2" style="text-shadow: 3px 1px #ffffff;">Welcome</h1>
+                                <p class="lead fw-normal mb-4">Join Us to view our survey and use our services. Thank you!</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                     <a class="btn gradient-custom text-white btn-lg px-4" href="login.php">Sign In</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="sign-up.php">Sign Up</a>
+                                    <a class="btn btn-dark btn-lg px-4" href="sign-up.php">Sign Up</a>
                                 </div>
                             </div>
                         </div>

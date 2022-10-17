@@ -61,17 +61,17 @@ if (isset($_SESSION['id'])) {
             </div>
 
             <div class="col-lg-6 mt-3">
-                <p> To view all the questions. Click the button below. (Admin can also update the survey questions if necessary).
-                <a href="questions.php" class="btn btn-outline-primary w-100 mt-2 p-2"> View Questions</a>
+                <p class="fw-semibold"> To view all the questions. Click the button below. (Admin can also update the survey questions if necessary).
+                <a href="questions.php" class="btn btn-primary w-100 mt-2 p-2"> View Questions</a>
             </div>
 
             <div class="col-lg-6 mt-3">
-                <p> To view the survey. Click the button below. </br> (Admin cannot answer the survey).
-                <a href="survey.php" class="btn btn-outline-primary w-100 mt-2 p-2"> View Survey </a>
+                <p class="fw-semibold"> To view the survey. Click the button below. </br> (Admin cannot answer the survey).
+                <a href="survey.php" class="btn btn-primary w-100 mt-2 p-2"> View Survey </a>
             </div>
         </div>
 
-        <div class="row mt-5 shadow-lg pt-5" id="chart">
+        <div class="row mt-5 shadow-lg pt-5 bg-light " style="border-radius: 10px" id="chart">
             <h3> Survey Results </h3>
             <p class="mb-5"> Below are the results of the survey per question. These data are from the users who answered the survey. 
             <button id="export" class="btn gradient-custom text-white w-25 d-block float-end"> Export </button> </p>

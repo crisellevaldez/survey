@@ -20,8 +20,8 @@ if (isset($_SESSION['id'])) {
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 mt-3">
-                <p> To view the survey results. Click the button below. (Note: You will be redirected to survey page if you don't have results yet).
-                <a href="result.php" class="btn btn-outline-primary w-75 mt-2 p-2"> View Results </a>
+                <p class="fw-semibold"> To view the survey results. Click the button below. (Note: You will be redirected to survey page if you don't have results yet).
+                <a href="result.php" class="btn btn-primary w-75 mt-2 p-2"> View Survey/Results </a>
             </div>
     </div>
     <?php include 'templates/_footer.html'; ?>

@@ -27,15 +27,15 @@
     <!-- Section: Design Block -->
     <section class="">
         <!-- Jumbotron -->
-        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start"">
             <div class="container">
                 <div class="row gx-lg-5 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h1 class="my-5 display-3 fw-bold ls-tight">
+                        <h1 class="my-5 display-3 fw-bold ls-tight" style="text-shadow: 3px 1px #ffffff;">
                             Welcome <br />
-                            <span style="color: #d8363a">to our <span style="color: #ee7724">website </span></span>
+                            <span style="color: #d8363a" style="text-shadow: 1px 1px #ffffff;">to our <span style="color: #ee7724">website </span></span>
                         </h1>
-                        <p style="color: hsl(217, 10%, 50.8%)">
+                        <p>
                            The website consist of survey questions regarding mental health. Please sign in or sign up to access our services. Join us now! Thank you!
                         </p>
                     </div>

@@ -40,7 +40,7 @@ $(document).ready(function(){
 
            $('.row').prepend(`
                 <div class="col-md-6 mt-">
-                    <p> Note: The results are based on the survey. You cannot repeat the survey once submitted. Please contact the admin if there are any concerns or inquiries. </p>
+                    <p class="fw-semibold"> Note: The results are based on the survey. You cannot repeat the survey once submitted. Please contact the admin if there are any concerns or inquiries. </p>
                     <div class="p-5 bg-light border rounded-3 shadow" >
                         <h1> Result </h1>
                         <p class="fs-5" style="color: ${bgColor}">${res}% = ${msg}</p>

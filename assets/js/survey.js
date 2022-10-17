@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
 
         else {
-            location.href = 'home.php';
+            location.href = 'index.php';
         }
     })
 

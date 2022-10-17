@@ -22,7 +22,7 @@ if (isset($_SESSION['id'])) {
 <body class="bg-light">
     <?php include 'templates/_navbar.php'; ?>
 
-    <div class="container bg-light">
+    <div class="container bg-light mt-5" style="border-radius: 10px">
         <div class="row">
             <div class="col-12">
                 <h3 class="mt-5"> Survey Questions </h1>
