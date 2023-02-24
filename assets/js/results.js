@@ -7,54 +7,60 @@ $(document).ready(function(){
 
             let msg = "";
             let bgColor = "";
-            let msg2 = "";
-            if (res >= 81){
-                msg = "Unhealthy State";
-                bgColor = "#f27252";
-                msg2 = "If all signs keep worsening like fear, anxiety, poor lifestyle, excessive use of tobacco and alcohol, self isolation from friends and family, or even thinking about harming yourself. Seek professional help immediately.";
+            let msg2 = "", msg3 = "";
+            if (res >= 60){
+                msg = "Digital Literate";
+                bgColor = "#6fc771";
+                msg2 = `You're highly engage and consume internet content responsibly.
+                Engaging with high intellectual activity such as reasoning and thinking. Very attentive towards the environment you live in and act appropriate. Creativeness and critical thinking skills have developed 
+                in this stage very often because of the amount of information you experience.`;
+                msg3 = `Having these essential skills and digital ethics toward the digital world is very pleasant to be around with. Stay responsibly and well informed.`;
             }
 
-            else if (res >= 61){
-                msg = "High Stress";
+            else if (res >= 40){
+                msg = "Customary Literate";
                 bgColor = "#ff52fc";
-                msg2 = "This is concerning! Pain, migraine or tension in the head or body shouldn’t be overlooked. Emotional signs like depression and anxiety in this stage is very serious!"
-            }
-
-            else if (res >= 41){
-                msg = "Exhaustion";
-                bgColor = "#b5ae31";
-                msg2 = "You're quite showing a sign of fatigue for having the prolonged period of mild stress. Irritability and insomnia is a bad sign."
-            }
-
-            else if (res >= 21){
-                msg = "Mild Stress";
-                bgColor = "#2cdbde";
-                msg2 = "You're showing a little sign of stress that could further affect your physical health, emotional state and psychological state. Self discipline is a must."
+                msg2 = `You're somehow engage and aware about the digital content that 
+                you're witnessing. Usually, a very hot topic or currently trending type
+                of information’s but you don't get yourself to involve or not very 
+                intrigue in the situation. Very passive type of   user or viewer. 
+                Let other users dictate what type of content you're seeing on your 
+                screen.`;
+                msg3 = `Being a passive onlooker means you lack initiative and enthusiasm towards different interest. But doesn’t necessarily mean it’s bad.`;
             }
 
             else if (res >= 0){
-                msg = "Normal State";
-                bgColor = "#6fc771";
-                msg2 = "Congratulations! You're in a healthy normal state of mind and body.";
+                msg = "Digital Illiterate";
+                bgColor = "#f27252";
+                msg2 = `You find using digital platforms difficult. Doesn't adapt very 
+                easily on the technological process and can be easily affected by 
+                disinformation’s. You lack the ability to think critically and be 
+                creative to some degree. The most vulnerable on being influence by 
+                public figures such as vloggers, youtubers etc.`;
+                msg3 = `You should have manage your time on the internet responsibly and don’t just consume but also get yourself engage in a way you have to think critically so that you can be well informed.`;
             }
 
-           $('.row').prepend(`
-                <div class="col-md-6 mt-">
-                    <p class="fw-semibold"> Note: The results are based on the survey. You cannot repeat the survey once submitted. Please contact the admin if there are any concerns or inquiries. </p>
-                    <div class="p-5 bg-light border rounded-3 shadow" >
-                        <h1> Result </h1>
-                        <p class="fs-5" style="color: ${bgColor}">${res}% = ${msg}</p>
-                        <p class="fs-5">${msg2}</p>
+        $('.row').prepend(`
+            <div class="col-lg-6">
+                <p class="fw-semibold"> Note: The results are based on the survey. You cannot repeat the survey once submitted. Please contact the admin if there are any concerns or inquiries. </p>
+                <div class="p-5 bg-light rounded-3" style="border: 1px solid rgba(0, 0, 0, 0.546);">
+                    <h1> Result </h1>
+                    <p class="fs-5" style="color: ${bgColor}">${res}% = ${msg}</p>
+                    <p class="fs-5">${msg2}</p>
+                    <div class="alert alert-primary" role="alert">
+                        <p> <b> Recommendations: </b> </p>
+                        ${msg3}
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="sonar-wrapper">
-                        <div class="sonar-emitter" style="background-color:${bgColor}">
-                            <h4 class="text-white" style="text-align: center; vertical-align: middle; line-height: 50px;"> ${res}% </br> ${msg}</h4>
-                            <div class="sonar-wave" style="background-color:${bgColor}"></div>
-                        </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="sonar-wrapper">
+                    <div class="sonar-emitter" style="background-color:${bgColor}">
+                        <h4 class="text-white" style="text-align: center; vertical-align: middle; line-height: 50px;"> ${res}% </br> ${msg}</h4>
+                        <div class="sonar-wave" style="background-color:${bgColor}"></div>
                     </div>
-                </div>`);
+                </div>
+            </div>`);
         }
     });
 

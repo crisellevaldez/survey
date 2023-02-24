@@ -4,13 +4,14 @@ session_start();
 
 <?php include 'templates/_resources.html'; ?>
 <title> Home </title>
+</head>
 
 
 <body class="text-center">
     <?php include 'templates/_navbar.php'; ?>
 
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0" style="height: 35vw;">
             <!-- Header-->
             <header class=" py-5">
                 <div class="container px-5">
@@ -19,10 +20,7 @@ session_start();
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-5 fw-bolder mb-2" style="text-shadow: 3px 1px #ffffff;">Welcome</h1>
                                 <p class="lead fw-normal mb-4">Join Us to view our survey and use our services. Thank you!</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn gradient-custom text-white btn-lg px-4" href="login.php">Sign In</a>
-                                    <a class="btn btn-dark btn-lg px-4" href="sign-up.php">Sign Up</a>
-                                </div>
+                                <a class="btn gradient-custom text-white btn-lg px-4" href="login.php">Sign In</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-xl-block text-center">

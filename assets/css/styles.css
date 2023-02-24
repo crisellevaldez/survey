@@ -25,10 +25,16 @@
      padding: 40px;
 }
 
+/* Navbar */
+.navbar {
+     background-color: #1e1d1f;
+}
+
+
 /* Shadow */
 .b-example-divider {
      height: 3rem;
-     background-color: rgba(0, 0, 0, .1);
+     background-color: rgba(0, 0, 0, 0.692);
      border: solid rgba(0, 0, 0, .15);
      border-width: 1px 0;
      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -36,16 +42,22 @@
 
 .gradient-custom {
      /* fallback for old browsers */
-     background: #fccb90;
+     background: #1969cabd;
+}
 
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+.gradient-custom:hover {
+     /* fallback for old browsers */
+     background: #1969cadd;
+}
 
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+.btn-custom {
+     color: #1969cabd;
+}
+
+.btn-custom:hover {
+     color: #1969cadd;
 }
 
 body {
-     background-image: url("../imgs/bg.png");
-     background-size: cover;
+     background-color: rgb(255, 255, 255);
 }

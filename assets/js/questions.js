@@ -12,7 +12,7 @@ $(document).ready(function(){
                 rows += `<tr>
                     <th scope="row"> ${question.order_by} </th>
                     <td style="width: 90%"> <textarea class="form-control" placeholder="Questions">${question.question}</textarea> </td>
-                    <td class="text-center"> <button type="button" id="btn-update-q" onclick="updateQuestion(${question.id})" class="btn btn-primary"> <i class="fa-solid fa-pen-to-square"></i> </button> </td>
+                    <td class="text-center"> <button type="button" id="btn-update-q" onclick="updateQuestion(${question.id})" class="btn btn-custom"> <i class="fa-solid fa-pen-to-square"></i> </button> </td>
                 </tr>`;
             }
 

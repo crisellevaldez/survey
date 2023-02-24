@@ -3,11 +3,6 @@ html {
     background-color: #cef;
 }
 
-html,
-body,
-.sonar-wrapper {
-    height: 100%;
-}
 
 /* Prevent scrollbars to appear when waves go out of bound */
 .sonar-wrapper {

@@ -16,6 +16,12 @@
 <?php include 'templates/_resources.html'; ?>
 <link rel="stylesheet" href="assets/css/sign-in.css">
 <title> Sign In </title>
+<style>
+    .content {
+        min-height: calc(100% - 100px);
+        padding-bottom: 100px;
+}
+</style>
 
 <!-- Login JS -->
 <script src="assets/js/login.js"></script>
@@ -25,7 +31,7 @@
     <?php include 'templates/_navbar.php'; ?>
 
     <!-- Section: Design Block -->
-    <section class="">
+    <section class="content">
         <!-- Jumbotron -->
         <div class="px-4 py-5 px-md-5 text-center text-lg-start"">
             <div class="container">
@@ -33,15 +39,15 @@
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h1 class="my-5 display-3 fw-bold ls-tight" style="text-shadow: 3px 1px #ffffff;">
                             Welcome <br />
-                            <span style="color: #d8363a" style="text-shadow: 1px 1px #ffffff;">to our <span style="color: #ee7724">website </span></span>
+                            <span style="color: #1969cabd;" style="text-shadow: 1px 1px #79589F;">to our <span style="color: #10498edd;;">website </span>
                         </h1>
                         <p>
                            The website consist of survey questions regarding mental health. Please sign in or sign up to access our services. Join us now! Thank you!
                         </p>
                     </div>
 
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div class="card shadow ">
+                    <div class="col-lg-6 mb-5 mb-lg-0 ">
+                        <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.546);">
                             <div class="card-body py-5 px-md-5">
                                 <form class="needs-validation" novalidate>
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -71,7 +77,7 @@
 
                                     <div class="text-end">
                                         <p class="m-0">Don't have an account?</p>
-                                        <a href="sign-up.php" class="btn btn-outline-danger fw-semibold text-decoration-none"> SIGN UP NOW </a>
+                                        <a href="sign-up.php" class="btn-custom text-decoration-none"> Sign Up </a>
                                     </div>
                                 </form>
                             </div>

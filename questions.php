@@ -22,12 +22,12 @@ if (isset($_SESSION['id'])) {
 <body class="bg-light">
     <?php include 'templates/_navbar.php'; ?>
 
-    <div class="container bg-light mt-5" style="border-radius: 10px">
+    <div class="container bg-light mt-5 mb-5">
         <div class="row">
             <div class="col-12">
                 <h3 class="mt-5"> Survey Questions </h1>
                     <p> To update the question content, fill out the fields and click the update button. </p>
-                    <table class="table table-bordered table-striped">
+                    <table class="table table-bordered table-striped" style="border: 1px solid black; border-radius: 5px;">
                         <thead>
                             <tr>
                                 <th scope="col">No.</th>

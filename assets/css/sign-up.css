@@ -3,7 +3,9 @@
     line-height: 2.15;
     padding-left: .75em;
     padding-right: .75em;
+    border: 1px solid rgb(29, 29, 29) !important;
     }
     .card-registration .select-arrow {
     top: 13px;
     }
+

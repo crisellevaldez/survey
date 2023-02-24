@@ -5,11 +5,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT id, firstname, lastname, middlename, dob, college, year_level, password, type FROM users WHERE email=?");
+    $stmt = $conn->prepare("SELECT id, firstname, lastname, middlename, dob, gender, college, course, year_level, password, type FROM users WHERE email=?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
 
-    $stmt->bind_result($userId, $firstName, $lastName, $middleName, $dob, $college, $year_level, $hash, $type);
+    $stmt->bind_result($userId, $firstName, $lastName, $middleName, $dob, $gender, $college, $course, $year_level, $hash, $type);
     $stmt->store_result();
     if($stmt->num_rows == 1) {
         if($stmt->fetch()) {
@@ -19,6 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['loa'] = $type;
                 $_SESSION['college'] = $college;
                 $_SESSION['year_level'] = $year_level;
+                $_SESSION['gender'] = $gender;
+                $_SESSION['course'] = $course;
 
                 $from = new DateTime($dob);
                 $to   = new DateTime('today');

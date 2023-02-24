@@ -34,7 +34,7 @@ else {
 <body class="text-center bg-white">
     <?php include 'templates/_navbar.php'; ?>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5" >
         <div class="row">
 
         </div>

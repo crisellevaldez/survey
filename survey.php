@@ -30,9 +30,9 @@ if (!isset($_SESSION['id'])) {
 <body class="text-center">
     <?php include 'templates/_navbar.php'; ?>
 
-    <div class="container shadow-lg p-3">
+    <div class="container p-3 survey-1 my-5">
         <div class="mx-0 mx-sm-auto">
-            <div class="card mt-5">
+            <div class="card mt-5"  style="border: 1px solid black; border-radius: 5px;">
                 <form class="needs-validation" novalidate>
                     <div class="card-header">
                         <h5 class="card-title mt-2" id="exampleModalLabel">Answer the survey:</h5>
@@ -49,31 +49,37 @@ if (!isset($_SESSION['id'])) {
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 mb-2 p-1">
+                                <div class="col-md-4 mb-2 p-1">
+                                    <div class="form-outline">
+                                        <h6 class="text-start"> Gender </h6>
+                                        <input type="tel" placeholder="GENDER" name="gender" value="<?php echo $_SESSION["gender"]; ?>" class="form-control pt-2 pb-2" readonly />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-2 p-1">
                                     <div class="form-outline">
                                         <h6 class="text-start"> Age </h6>
-                                        <input type="tel" placeholder="CONTACT NO." name="contact-no" value="<?php echo $_SESSION["age"]; ?>" class="form-control pt-2 pb-2" readonly/>
+                                        <input type="tel" placeholder="CONTACT NO." name="contact-no" value="<?php echo $_SESSION["age"]; ?>" class="form-control pt-2 pb-2" readonly />
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 mb-2 p-1">
+                                <div class="col-md-4 p-1">
                                     <div class="form-outline">
-                                        <h6 class="text-start"> GWA (Last Semester) </h6>
-                                        <input type="text" placeholder="GWA" name="gwa" class="form-control pt-2 pb-2" required />
-                                        <div class="invalid-feedback text-start"> Please enter your GWA.</div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 p-1">
-                                    <div class="form-outline">
-                                        <h6 class="text-start"> COLLEGE </h6>
+                                        <h6 class="text-start"> College </h6>
                                         <input type="text" value="<?php echo $_SESSION["college"]; ?>" class="form-control pt-2 pb-2" readonly />
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 p-1">
                                     <div class="form-outline">
-                                        <h6 class="text-start"> YEAR LEVEL </h6>
+                                        <h6 class="text-start"> Course </h6>
+                                        <input type="text" value="<?php echo $_SESSION["course"]; ?>" class="form-control pt-2 pb-2" readonly />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 p-1">
+                                    <div class="form-outline">
+                                        <h6 class="text-start"> Year Level </h6>
                                         <input type="text" value="<?php echo $_SESSION["year_level"]; ?>" class="form-control pt-2 pb-2" readonly />
                                     </div>
                                 </div>
@@ -106,7 +112,7 @@ if (!isset($_SESSION['id'])) {
                     </div>
                     <div class="card-footer text-end">
                         <?php if ($_SESSION['loa'] == 2) { ?>
-                            <button type="submit" class="btn gradient-custom text-white">Submit</button>
+                            <button type="submit" class="btn gradient-custom text-white">Next</button>
                         <?php } ?>
                     </div>
                 </form>
@@ -114,6 +120,7 @@ if (!isset($_SESSION['id'])) {
         </div>
 
         <?php include 'templates/_back-to-top.html'; ?>
+    </div>
     </div>
 
 
